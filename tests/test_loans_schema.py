@@ -7,7 +7,6 @@ from schemas.loans import schema, loan_products
 class TestLoanSchema(unittest.TestCase):
 
     def setUp(self):
-        # Set up the GraphQL client
         self.client = Client(schema)
 
     def test_query_loan_products(self):
